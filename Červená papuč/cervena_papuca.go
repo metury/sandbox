@@ -118,6 +118,7 @@ func main() {
 		printPacks(&packOne, &packTwo)
 		round ++
 	}
-	fmt.Println("Number of round: ", round)
+	fmt.Println("Počet kol:")
+	fmt.Println(round)
 }
 
