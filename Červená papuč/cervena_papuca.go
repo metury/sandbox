@@ -15,6 +15,17 @@ func genPacks(packSize int) []int{
 	return pack
 }
 
+func genNormalPack() []int{
+	pack := []int{0,0,0,0,0,0,1,1,
+					0,0,0,0,0,0,1,1,
+					0,0,0,0,0,0,1,1,
+					0,0,0,0,0,0,1,1}
+	rand.Shuffle(len(pack), func(i, j int) {
+		pack[i], pack[j] = pack[j], pack[i]
+	})
+	return pack
+}
+
 func printCard(card int){
 	if card == 1{
 		fmt.Print("R")
@@ -100,10 +111,9 @@ func main() {
 			}
 		}
 	} else {
-		packSize = 80
-		pack = genPacks(packSize)
-		packOne = pack[0 : (packSize / 2) + 1]
-		packTwo = pack[(packSize / 2) - 1 : packSize]
+		pack = genNormalPack()
+		packOne = pack[0 : (len(pack) / 2) + 1]
+		packTwo = pack[(len(pack) / 2) - 1 : len(pack)]
 	}
 	round := 0
 	fmt.Print("Balíček: ")
