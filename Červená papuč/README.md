@@ -30,4 +30,6 @@ S výsledného souboru `RESULUTS` provede znázornění do obrázku:
 
 ![obrázku](plot.png)
 
-Kde je i lineární regrese.
+A taky standardního balíčku s `32` kartami, z nichž `8` je červených.
+
+![obrázek](plot32.png)
