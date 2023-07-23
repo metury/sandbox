@@ -4,7 +4,7 @@ from scipy import stats
 from os.path import exists
 
 
-result_file = "RESULTS"
+result_file = "RESULTS32"
 results = []
 numbers=[]
 
@@ -37,13 +37,8 @@ if exists(result_file):
 		mid_num.append(current_num)
 
 if len(numbers) != 0:
-	slope, intercept, r, p, std_err = stats.linregress(numbers, results)
-	def myfunc(x):
-		return slope * x + intercept
-	model = list(map(myfunc, numbers))
 	plt.title("Červená papuč")
 	plt.scatter(numbers, results, color='Red', label="Počet kol")
-	plt.plot(numbers, model, color='Blue', label="Lineární regrese")
-	plt.plot(mid_num, middle, color='Yellow', label="Průměr")
+	plt.scatter(mid_num, middle, color='Yellow', label="Průměr")
 	plt.legend()
-	plt.savefig("plot.png")
+	plt.savefig("plot32.png")
