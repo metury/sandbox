@@ -17,9 +17,9 @@ func genPacks(packSize int) []int{
 
 func genNormalPack() []int{
 	pack := []int{0,0,0,0,0,0,1,1,
-					0,0,0,0,0,0,1,1,
-					0,0,0,0,0,0,1,1,
-					0,0,0,0,0,0,1,1}
+		0,0,0,0,0,0,1,1,
+		0,0,0,0,0,0,1,1,
+		0,0,0,0,0,0,1,1}
 	rand.Shuffle(len(pack), func(i, j int) {
 		pack[i], pack[j] = pack[j], pack[i]
 	})
@@ -28,9 +28,9 @@ func genNormalPack() []int{
 
 func printCard(card int){
 	if card == 1{
-		fmt.Print("R")
+		fmt.Print("♦️")
 	} else {
-		fmt.Print("B")
+		fmt.Print("♠️")
 	}
 }
 
