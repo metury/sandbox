@@ -44,7 +44,7 @@ Convert createConvert(){
 	C.addLanguage(".py","python");
 	C.addLanguage(".cpp","cpp");
 	C.addLanguage(".java","java");
-	C.addLanguage(".cd", "cs");
+	C.addLanguage(".cs", "cs");
 	C.addLanguage(".c", "c");
 	C.addLanguage(".h", "c");
 	C.addLanguage(".hpp","cpp");
