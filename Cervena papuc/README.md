@@ -14,22 +14,6 @@ Obsahuje samotnou simulaci karetni hry. Lze ji volat:
 	- `go run cervena_papuca.go 1100101 1010011`
 	- `1` je červená karta a `0` černá
 
-## `run_tests.sh`
+## `test.pl`
 
-Skript na spuštění několika náhodných balíčků. Bere tři argumenty:
-
-1. Počet testů na jednu velikost balíčku.
-2. Spodní hranici počtu karet.
-3. Horní hranici počtu karet.
-
-Vygeneruje se soubor `RESULTS`.
-
-## `plot.py`
-
-S výsledného souboru `RESULUTS` provede znázornění do obrázku:
-
-![obrázku](plot.png)
-
-A taky standardního balíčku s `32` kartami, z nichž `8` je červených.
-
-![obrázek](plot32.png)
+![Plot](plot.png)
