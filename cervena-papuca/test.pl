@@ -24,7 +24,7 @@ foreach my $test (@tests) {
 		open(my $in, '>>', $res_file) or die $!;
 		print $in "$test ";
 		close($in);
-		system("go run $papuc $test | tail -n 1 >> $res_file")
+		system("go run $papuc $test | tail -n 1 | awk '{print \$4}' >> $res_file")
 	}
 }
 
