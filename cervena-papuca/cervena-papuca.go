@@ -5,10 +5,14 @@ import (
 	"math/rand"
 	"os"
 	"strconv"
+	"time"
 )
 
 func gen_packs(pack_size int) []int {
+	// Actually Seed is deprecated.
+	rand.Seed(time.Now().UnixNano())
 	pack := rand.Perm(pack_size)
+	fmt.Println(pack)
 	for i := 0; i < pack_size; i++ {
 		pack[i] = (pack[i] % 2)
 	}
@@ -20,6 +24,7 @@ func get_standard_pack() []int {
 		0, 0, 0, 0, 0, 0, 1, 1,
 		0, 0, 0, 0, 0, 0, 1, 1,
 		0, 0, 0, 0, 0, 0, 1, 1}
+	rand.Seed(time.Now().UnixNano())
 	rand.Shuffle(len(pack), func(i, j int) {
 		pack[i], pack[j] = pack[j], pack[i]
 	})

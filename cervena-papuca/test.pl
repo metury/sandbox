@@ -2,8 +2,8 @@
 
 our $papuc = "cervena-papuca.go";
 our $res_file = "RESULTS";
-our @tests = (10, 20, 30, 40, 50, 60, 70, 80);
-our $repetitions = 1;
+our @tests = (15, 20, 30, 40, 50, 60, 70, 80, 90);
+our $repetitions = 50;
 our $gp = "plot.gp";
 
 open(my $in, '>', $res_file) or die $!;
