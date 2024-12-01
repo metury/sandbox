@@ -12,7 +12,6 @@ func gen_packs(pack_size int) []int {
 	// Actually Seed is deprecated.
 	rand.Seed(time.Now().UnixNano())
 	pack := rand.Perm(pack_size)
-	fmt.Println(pack)
 	for i := 0; i < pack_size; i++ {
 		pack[i] = (pack[i] % 2)
 	}
@@ -72,7 +71,7 @@ func print_card(card int) {
 	}
 }
 
-func print_pack(text string, pack *[] int) {
+func print_pack(text string, pack *[]int) {
 	fmt.Print(text)
 	for i := 0; i < len((*pack)); i++ {
 		print_card((*pack)[i])
