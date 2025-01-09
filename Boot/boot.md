@@ -46,7 +46,7 @@ media="gimp inkscape handbrake kid3-qt asunder obs-studio"
 chat="telegram-desktop"
 kde="kdiff3 kdenlive k3b kate karbon krita krename"
 
-office="texstudio libreoffice texlive-full pandoc ipe xournalpp ghostwriter calligra"
+office="texstudio tikzit libreoffice texlive-full pandoc ipe xournalpp ghostwriter calligra"
 tools="screenfetch htop tree curl exiftool bleachbit"
 
 dev="git python3 ruby"
